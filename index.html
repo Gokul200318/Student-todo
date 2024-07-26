@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT FORM</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <h1>STUDENT FORM</h1>
+    </div>
+<div >
+    <table class="table" id="table">
+        <tr >
+            <th>Name</th>
+            <td><input type="text" id="name"></td>
+        </tr>
+        <tr>
+            <th>Age</th>
+            <td><input type="number" id="age"></td>
+        </tr>
+        <tr>
+            <th>Gender</th>
+            <td>
+                <input type="radio" name="Gender" value="Male" onclick="gen(value)">Male<br>
+                
+                <input type="radio" name="Gender" value="Female" onclick="gen(value)" >Female<br>
+                
+            </td>
+        </tr>
+        <tr>
+            <th>Course</th>
+            <td>
+                <select id="Course">  
+                    <option value="Python">Python</option>  
+                    <option value="C">C</option>  
+                    <option value="C++">C++</option>  
+                    <option value="JAVA">JAVA</option>  
+                    <option value="Javascript">Javascript</option>
+                    </select>  
+            </td>
+        </tr>
+        <tr>
+            <th>E-mail</th>
+            <td>
+                <input type="email" id="email" name="email">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" >
+                <button class="button" id="save">Save</button>
+            </td>
+        </tr>
+    </table><br>
+     <h2 class="topic">STUDENT DATA</h2><br>
+</div>
+
+<div>
+    <table class="table1" id="table1"  data(event)>
+        <tr class="tr1">
+            <th>NAME</th>
+            <th>AGE</th>
+            <th>GENDER</th>
+            <th>COURSE</th>
+            <th>E-MAIL</th>
+            <th>ACTION</th>
+        </tr>
+       
+    </table>
+</div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
